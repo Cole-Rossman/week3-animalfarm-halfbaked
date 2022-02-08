@@ -32,6 +32,7 @@ export function renderAnimal(animal) {
 
     const img = document.createElement('img');
     img.src = `/assets/${animal.type}.svg`;
+    img.classList.add('style-img');
     console.log(img.src, 'img src');
     const nameSpan = document.createElement('span');
     nameSpan.textContent = animal.name;

@@ -1,5 +1,6 @@
 import { animals } from '../data.js';
-import { renderListItem, renderAnimal } from '../render-utils.js';
+import { renderAnimal } from '../render-utils.js';
+import { findById } from '../utils.js';
 
 const infoDiv = document.getElementById('info');
 
@@ -8,9 +9,9 @@ console.log('hello animals');
 console.log(window.location.search);
 
 const params = new URLSearchParams(window.location.search);
-console.log(params.get('id'));
+const id = params.get('id');
 
-const animal = animals.find((item) => item.id === params.get('id'));
+const animal = findById(id, animals);
 console.log(animal);
 
 const animalInfo = renderAnimal(animal);
