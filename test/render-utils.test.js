@@ -22,7 +22,7 @@ test('renderListItem renders a div with animal details', (expect) => {
     };
     const actual = renderListItem(samuel);
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+    
     expect.equal(actual.outerHTML, expected);
 });
+
