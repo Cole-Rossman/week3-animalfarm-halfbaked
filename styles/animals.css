@@ -2,3 +2,8 @@
     width: 200px;
     height: 100px;
 }
+
+.name {
+    margin: 10px;
+    font-size: x-large;
+}
